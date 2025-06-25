@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Log in to your account</h2>
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="Enter your mail" required />
+
+      <label>Password</label>
+      <div class="password-container">
+        <input type="password" placeholder="Enter your password" required />
+        <span class="eye-icon">👁️</span>
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="remember" />
+        <label for="remember">Remember me</label>
+      </div>
+
+      <button type="submit" class="btn">Log in</button>
+
+      <div class="divider">Or</div>
+
+      <div class="social-login">
+        <button class="google-btn">🔵 Google</button>
+        <button class="facebook-btn">🔷 Facebook</button>
+      </div>
+
+      <p class="bottom-text">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+</body>
+</html>
