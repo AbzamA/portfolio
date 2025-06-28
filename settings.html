@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Settings</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f0f2f5;
+    }
+
+    .navbar {
+      background-color: #525a58;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    .navbar h1 {
+      font-size: 22px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+
+    .settings-container {
+      max-width: 500px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .settings-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+    }
+
+    .btn {
+      background-color: #00afa1;
+      color: #fff;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #c8d6d6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <h1>MyApp</h1>
+    <div>
+      <a href="home.html">Home</a>
+      <a href="profile.html">Profile</a>
+      <a href="logout.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="settings-container">
+    <h2>Account Settings</h2>
+    <form>
+      <label for="username">Full Name</label>
+      <input type="text" id="username" placeholder="Enter your name" />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" placeholder="Enter your email" />
+
+      <label for="password">Change Password</label>
+      <input type="password" id="password" placeholder="Enter new password" />
+
+      <button type="submit" class="btn">Save Changes</button>
+    </form>
+  </div>
+
+</body>
+</html>
